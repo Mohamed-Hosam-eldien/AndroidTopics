@@ -1,9 +1,10 @@
 package com.codingtester.androidtopics
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.codingtester.androidtopics.databinding.ActivityMainBinding
+import com.codingtester.androidtopics.ui.broadcast.BroadcastActivity
 import com.codingtester.androidtopics.ui.intent.IntentActivity
 
 class MainActivity : AppCompatActivity() {
@@ -17,6 +18,10 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnIntent.setOnClickListener {
             startActivity(Intent(this, IntentActivity::class.java))
+        }
+
+        binding.btnBroadcast.setOnClickListener {
+            startActivity(Intent(this, BroadcastActivity::class.java))
         }
 
     }

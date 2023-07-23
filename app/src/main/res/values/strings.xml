@@ -7,4 +7,9 @@
     <string name="implicit_intent">Implicit Intent</string>
     <string name="intent_filter">Intent Filter</string>
     <string name="intent">Intent</string>
+    <string name="broadcast">Broadcast</string>
+    <string name="register_airplane_broadcast">Register Airplane</string>
+    <string name="unregister_airplane_broadcast">Unregister Airplane</string>
+    <string name="register_network">Register Network</string>
+    <string name="register_boot_complete">Register Boot Complete</string>
 </resources>
