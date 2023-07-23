@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_gravity="center"
@@ -15,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="62dp"
         android:textSize="20sp"
-        android:text="Explicit Intent"/>
+        android:text="@string/explicit_intent"/>
 
     <Button
         android:id="@+id/btnImplicitIntent"
@@ -23,7 +21,7 @@
         android:layout_height="62dp"
         android:textSize="20sp"
         android:layout_marginTop="32dp"
-        android:text="Implicit Intent"/>
+        android:text="@string/implicit_intent"/>
 
     <Button
         android:id="@+id/btnIntentFilter"
@@ -31,6 +29,6 @@
         android:layout_height="62dp"
         android:textSize="20sp"
         android:layout_marginTop="32dp"
-        android:text="Intent Filter"/>
+        android:text="@string/intent_filter"/>
 
 </LinearLayout>

@@ -8,10 +8,14 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.codingtester.androidtopics.databinding.ActivityImplicitBinding
 
-
 class ImplicitActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityImplicitBinding
+
+    companion object {
+        const val YOUTUBE_PACKAGE_NAME = "com.google.android.youtube"
+        const val WEBSITE_LINK = "https://www.google.com"
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,7 +46,7 @@ class ImplicitActivity : AppCompatActivity() {
 
     private fun openYoutube() {
         Intent(Intent.ACTION_MAIN).apply {
-            `package` = "com.google.android.youtube" //package name of youtube
+            `package` = YOUTUBE_PACKAGE_NAME //package name of youtube
             try {
                 startActivity(this)
             } catch (ex: ActivityNotFoundException) {
@@ -52,7 +56,7 @@ class ImplicitActivity : AppCompatActivity() {
     }
 
     private fun openBrowser() {
-        Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com")).apply {
+        Intent(Intent.ACTION_VIEW, Uri.parse(WEBSITE_LINK)).apply {
             startActivity(this)
         }
     }

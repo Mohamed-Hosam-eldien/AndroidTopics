@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">AndroidTopics</string>
+    <string name="open_email">Open Email</string>
+    <string name="open_youtube">Open Youtube</string>
+    <string name="open_browser">Open Browser</string>
+    <string name="explicit_intent">Explicit Intent</string>
+    <string name="implicit_intent">Implicit Intent</string>
+    <string name="intent_filter">Intent Filter</string>
+    <string name="intent">Intent</string>
 </resources>

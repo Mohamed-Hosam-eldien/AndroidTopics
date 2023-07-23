@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_gravity="center"
@@ -16,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="62dp"
         android:textSize="20sp"
-        android:text="Open Email"/>
+        android:text="@string/open_email"/>
 
     <Button
         android:id="@+id/btnYoutube"
@@ -24,7 +22,7 @@
         android:layout_height="62dp"
         android:textSize="20sp"
         android:layout_marginTop="16dp"
-        android:text="Open Youtube"/>
+        android:text="@string/open_youtube"/>
 
     <Button
         android:id="@+id/btnBrowser"
@@ -32,7 +30,7 @@
         android:layout_height="62dp"
         android:textSize="20sp"
         android:layout_marginTop="16dp"
-        android:text="Open Browser"/>
+        android:text="@string/open_browser"/>
 
     <Button
         android:id="@+id/btnFacebook"
