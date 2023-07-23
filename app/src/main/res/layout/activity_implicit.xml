@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_margin="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.intent.ImplicitActivity">
+
+    <Button
+        android:id="@+id/btnEmail"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:textSize="20sp"
+        android:text="Open Email"/>
+
+    <Button
+        android:id="@+id/btnYoutube"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"
+        android:text="Open Youtube"/>
+
+    <Button
+        android:id="@+id/btnBrowser"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"
+        android:text="Open Browser"/>
+
+    <Button
+        android:id="@+id/btnFacebook"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"
+        android:text="Open Facebook"/>
+
+</LinearLayout>
