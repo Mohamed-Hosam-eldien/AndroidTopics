@@ -18,4 +18,6 @@
     <string name="start_foreground_service">Start Foreground Service</string>
     <string name="start_sound">Start Sound</string>
     <string name="stop_sound">Stop Sound</string>
+    <string name="foreground_service">Foreground Service</string>
+    <string name="background_service">Background Service</string>
 </resources>
