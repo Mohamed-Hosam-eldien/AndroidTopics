@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.codingtester.androidtopics.databinding.ActivityMainBinding
 import com.codingtester.androidtopics.ui.broadcast.BroadcastActivity
 import com.codingtester.androidtopics.ui.intent.IntentActivity
+import com.codingtester.androidtopics.ui.service.ServiceActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -22,6 +23,10 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnBroadcast.setOnClickListener {
             startActivity(Intent(this, BroadcastActivity::class.java))
+        }
+
+        binding.btnService.setOnClickListener {
+            startActivity(Intent(this, ServiceActivity::class.java))
         }
 
     }

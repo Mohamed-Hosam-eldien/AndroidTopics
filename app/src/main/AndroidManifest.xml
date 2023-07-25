@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-
     <!-- for email intent -->
     <queries>
         <intent>
@@ -12,12 +11,14 @@
     </queries>
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
 
     <application
         android:allowBackup="true"
+        android:name=".ui.TopicsApp"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
@@ -26,6 +27,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidTopics"
         tools:targetApi="31">
+        <activity
+            android:name=".ui.service.ServiceActivity"
+            android:exported="false" />
         <activity
             android:name=".ui.broadcast.BroadcastActivity"
             android:exported="false" />
@@ -62,14 +66,18 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name="com.codingtester.androidtopics.ui.broadcast.BootCompleteReciever"
+        <receiver
+            android:name=".ui.broadcast.BootCompleteReciever"
             android:exported="true">
             <intent-filter>
+
                 <!-- REGISTER TO RECEIVE BOOT_COMPLETED EVENTS -->
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
-
+        <service android:name="com.codingtester.androidtopics.ui.service.ForegroundService" />
+        <service android:name="com.codingtester.androidtopics.ui.service.TextBackgroundService" />
+        <service android:name="com.codingtester.androidtopics.ui.service.SoundBackgroundService" />
     </application>
 
 </manifest>

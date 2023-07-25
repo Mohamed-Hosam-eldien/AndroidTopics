@@ -6,18 +6,15 @@ import android.content.Intent
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
 
-class NetworkReceiver: BroadcastReceiver() {
+class NetworkReceiver : BroadcastReceiver() {
 
     override fun onReceive(context: Context?, intent: Intent?) {
-
-        if (connectivityReceiverListener != null) {
-            connectivityReceiverListener!!.onNetworkConnectionChanged(isNetworkAvailable(context))
-        }
-
+        connectivityReceiverListener?.onNetworkConnectionChanged(isNetworkAvailable(context))
     }
 
     private fun isNetworkAvailable(context: Context?): Boolean {
-        val connectivityManager = context?.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
+        val connectivityManager =
+            context?.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
         val nw = connectivityManager.activeNetwork ?: return false
         val activeNw = connectivityManager.getNetworkCapabilities(nw) ?: return false
         return when {

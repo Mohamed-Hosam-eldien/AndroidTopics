@@ -24,4 +24,12 @@
         android:layout_marginTop="8dp"
         android:text="@string/broadcast"/>
 
+    <Button
+        android:id="@+id/btnService"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp"
+        android:text="@string/service"/>
+
 </LinearLayout>

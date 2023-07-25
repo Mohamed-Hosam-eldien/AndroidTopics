@@ -12,4 +12,10 @@
     <string name="unregister_airplane_broadcast">Unregister Airplane</string>
     <string name="register_network">Register Network</string>
     <string name="register_boot_complete">Register Boot Complete</string>
+    <string name="service">Service</string>
+    <string name="write_text">Write Text</string>
+    <string name="stop_foreground_service">Stop Foreground Service</string>
+    <string name="start_foreground_service">Start Foreground Service</string>
+    <string name="start_sound">Start Sound</string>
+    <string name="stop_sound">Stop Sound</string>
 </resources>
