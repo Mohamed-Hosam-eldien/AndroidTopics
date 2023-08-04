@@ -37,7 +37,6 @@ class ImplicitActivity : AppCompatActivity() {
         binding.btnFacebook.setOnClickListener {
             openFacebookPage()
         }
-
     }
 
     private fun openFacebookPage() {

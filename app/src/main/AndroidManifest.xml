@@ -67,7 +67,7 @@
         </activity>
 
         <receiver
-            android:name=".ui.broadcast.BootCompleteReciever"
+            android:name=".ui.broadcast.BootCompleteReceiver"
             android:exported="true">
             <intent-filter>
 

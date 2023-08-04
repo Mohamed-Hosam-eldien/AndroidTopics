@@ -33,5 +33,4 @@ class NetworkReceiver : BroadcastReceiver() {
     companion object {
         var connectivityReceiverListener: ConnectivityReceiverListener? = null
     }
-
 }

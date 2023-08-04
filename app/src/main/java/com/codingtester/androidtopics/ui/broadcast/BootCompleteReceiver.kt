@@ -5,7 +5,7 @@ import android.content.Context
 import android.content.Intent
 import android.widget.Toast
 
-class BootCompleteReciever: BroadcastReceiver() {
+class BootCompleteReceiver: BroadcastReceiver() {
 
     // you need to set 2 things in manifest file
     // 1--> intent filter between broadcast tags to make broadcast receive boot completed from system

@@ -30,7 +30,6 @@ class IntentFilterActivity : AppCompatActivity() {
         Glide.with(this)
             .load(uri)
             .into(binding.image)
-
     }
 
 }

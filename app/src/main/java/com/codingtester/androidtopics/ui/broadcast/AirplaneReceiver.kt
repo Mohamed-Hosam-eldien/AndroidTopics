@@ -6,7 +6,7 @@ import android.content.Intent
 import android.provider.Settings
 import android.widget.Toast
 
-class AirplaneReciecver : BroadcastReceiver() {
+class AirplaneReceiver : BroadcastReceiver() {
 
     override fun onReceive(context: Context?, intent: Intent?) {
         if(intent?.action == Intent.ACTION_AIRPLANE_MODE_CHANGED) {

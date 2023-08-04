@@ -10,8 +10,7 @@ import com.codingtester.androidtopics.databinding.ActivityBroadcastBinding
 class BroadcastActivity : AppCompatActivity(), NetworkReceiver.ConnectivityReceiverListener {
 
     private lateinit var binding: ActivityBroadcastBinding
-    private val airplaneModeReceiver = AirplaneReciecver()
-    private val bootCompletedReceiver = BootCompleteReciever()
+    private val airplaneModeReceiver = AirplaneReceiver()
 
     companion object {
         const val CONNECTIVITY_ACTION = "android.net.conn.CONNECTIVITY_CHANGE"
