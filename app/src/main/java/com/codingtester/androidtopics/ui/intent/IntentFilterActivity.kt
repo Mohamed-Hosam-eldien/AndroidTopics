@@ -31,5 +31,4 @@ class IntentFilterActivity : AppCompatActivity() {
             .load(uri)
             .into(binding.image)
     }
-
 }

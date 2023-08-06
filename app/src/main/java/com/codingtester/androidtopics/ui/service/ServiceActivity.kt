@@ -62,7 +62,6 @@ class ServiceActivity : AppCompatActivity(), TextBackgroundService.ServiceInterf
             }
         }
     }
-
     override fun writeAfterDelay(text: String) {
         binding.progress.visibility = View.GONE
         binding.txtText.visibility = View.VISIBLE

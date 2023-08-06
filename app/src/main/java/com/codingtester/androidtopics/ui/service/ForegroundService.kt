@@ -19,7 +19,6 @@ class ForegroundService: Service() {
         }
         return super.onStartCommand(intent, flags, startId)
     }
-
     private fun startForegroundService() {
         val notification = NotificationCompat.Builder(this, "our_channel_id")
             .setSmallIcon(R.drawable.ic_launcher_foreground)
@@ -28,7 +27,6 @@ class ForegroundService: Service() {
             .build()
         startForeground(1,notification)
     }
-
     enum class ServiceStatus {
         START, STOP
     }

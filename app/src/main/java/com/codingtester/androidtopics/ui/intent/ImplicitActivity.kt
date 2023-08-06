@@ -6,6 +6,7 @@ import android.net.Uri
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.codingtester.androidtopics.R
 import com.codingtester.androidtopics.databinding.ActivityImplicitBinding
 
 class ImplicitActivity : AppCompatActivity() {
@@ -39,17 +40,14 @@ class ImplicitActivity : AppCompatActivity() {
         }
     }
 
-    private fun openFacebookPage() {
-
-    }
-
+    private fun openFacebookPage() {}
     private fun openYoutube() {
         Intent(Intent.ACTION_MAIN).apply {
             `package` = YOUTUBE_PACKAGE_NAME //package name of youtube
             try {
                 startActivity(this)
             } catch (ex: ActivityNotFoundException) {
-                Toast.makeText(this@ImplicitActivity, "can't find youtube application!!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@ImplicitActivity, getString(R.string.can_t_find_youtube_application), Toast.LENGTH_SHORT).show()
             }
         }
     }

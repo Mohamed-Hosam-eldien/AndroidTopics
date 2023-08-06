@@ -11,7 +11,6 @@ class TextBackgroundService : Service() {
     override fun onBind(p0: Intent?): IBinder? {
         return null
     }
-
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
         Handler(Looper.getMainLooper()).postDelayed({
             serviceInterface?.writeAfterDelay("this text was written by background service")

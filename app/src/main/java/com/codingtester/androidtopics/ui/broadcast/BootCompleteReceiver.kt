@@ -4,6 +4,7 @@ import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.widget.Toast
+import com.codingtester.androidtopics.R
 
 class BootCompleteReceiver: BroadcastReceiver() {
 
@@ -14,7 +15,7 @@ class BootCompleteReceiver: BroadcastReceiver() {
 
     override fun onReceive(context: Context?, intent: Intent?) {
         if (intent?.action.equals(Intent.ACTION_BOOT_COMPLETED) ) {
-            Toast.makeText(context, "Welcome...", Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, context?.getString(R.string.welcome), Toast.LENGTH_SHORT).show()
         }
     }
 }

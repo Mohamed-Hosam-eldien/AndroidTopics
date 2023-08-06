@@ -21,4 +21,8 @@
     <string name="foreground_service">Foreground Service</string>
     <string name="background_service">Background Service</string>
     <string name="open_facebook">Open Facebook</string>
+    <string name="airplane_mode_enabled">Airplane mode enabled</string>
+    <string name="airplane_mode_disabled">Airplane mode Disabled</string>
+    <string name="welcome">Welcome…</string>
+    <string name="can_t_find_youtube_application">can\'t find youtube application!!</string>
 </resources>
